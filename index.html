@@ -14,7 +14,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css">
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   </head>
   <body>
 
@@ -27,10 +27,10 @@
           </div>
 
           <div class="header-navigation">
-            <div class="header-navigation-item header-navigation-item-one"><a class="header-navigation-item-a-one" href="" >Home</a><div class="header-linear header-linear-one"></div></div>
-            <div class="header-navigation-item header-navigation-item-two"><a class="header-navigation-item-a-two" href="">Features</a><div class="header-linear header-linear-two"></div></div>
-            <div class="header-navigation-item header-navigation-item-three"><a class="header-navigation-item-a-three" href="">Pricing</a><div class="header-linear header-linear-three"></div></div>
-            <div class="header-navigation-item header-navigation-item-four"><a class="header-navigation-item-a-four" href="">Blog</a><div class="header-linear header-linear-four"></div></div>
+            <div class="header-navigation-item header-navigation-item-one"><a class="header-navigation-item-a-one scroll" href="#home" >Home</a><div class="header-linear header-linear-one"></div></div>
+            <div class="header-navigation-item header-navigation-item-two"><a class="header-navigation-item-a-two scroll2" href="#features">Features</a><div class="header-linear header-linear-two"></div></div>
+            <div class="header-navigation-item header-navigation-item-three"><a class="header-navigation-item-a-three scroll3" href="#pricing">Pricing</a><div class="header-linear header-linear-three"></div></div>
+            <div class="header-navigation-item header-navigation-item-four"><a class="header-navigation-item-a-four scroll4" href="#blog">Blog</a><div class="header-linear header-linear-four"></div></div>
           </div>
 
           <div class="header-button-wrapper">
@@ -44,7 +44,7 @@
 
       </header>
 
-      <div class="section-home">
+      <div class="section-home _anim-items2" id="home">
 
         <div class="section-home-wrapper">
           <div class="section-home-text">
@@ -93,8 +93,8 @@
       </a>
     </div>
   </div>
-
-  <div class="section-home section-features">
+  <div class="features _anim-items">
+  <div class="section-home section-features" id="features">
 
     <div class="section-home-wrapper section-features-wrapper">
       <div class="section-home-img section-features-img">
@@ -141,8 +141,9 @@
 
 
   </div>
+</div>
 
-  <div class="icons">
+  <div class="icons _anim-items" id="pricing">
     <div class="icons-wrapper">
     <div class="icons-item icons-item-one icons-item-img-one">
       <div class="icons-item-img">
@@ -189,6 +190,15 @@
   </div>
   </div>
 
+
+ <!--swiper-slider _anim-items" id="blog">-->
+
+
       <script type="text/javascript" src="header-items.js"></script>
+      <script type="text/javascript" src="header.js"></script>
+      <script type="text/javascript" src="home.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script type="text/javascript" src="header_burger.js"></script>
+      <script type="text/javascript" src="smooth-scroll.js"></script>
   </body>
   </html>
