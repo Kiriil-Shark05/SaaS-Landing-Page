@@ -400,6 +400,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 150px;
 }
 
 .icons-wrapper {
@@ -595,6 +596,119 @@ header {
   opacity: 1;
   transition: all 0.8s ease 0.6s;
 }
+
+.blog {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.blog-wrapper {
+  width: 100%;
+  max-width: 1070px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-text {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.blog-title {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 70px;
+  /* or 117% */
+
+  letter-spacing: -1.87579px;
+
+  color: #19191B;
+  max-width: 523px;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  /* отображаем курсор в виде руки при наведении; некоторые
+  считают, что необходимо оставлять стрелочный вид для кнопок */
+  cursor: pointer;
+}
+
+.blog-button {
+  width: 335px;
+  height: 65px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #F7F7FB;
+  border-radius: 10px;
+  align-items: center;
+
+}
+
+.blog-button-yearly {
+  width: 160px;
+  height: 53px;
+  background-color: #5454D4;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.blog-button-yearly div {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: -0.500211px;
+
+  color: #ffffff;
+}
+
+.blog-button-monthly {
+  width: 160px;
+  height: 53px;
+  background-color: #F7F7FB;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.blog-button-monthly div{
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: -0.500211px;
+
+  color: #19191B;
+}
+
+.blog-rates {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 
 
 
