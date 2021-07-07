@@ -8,6 +8,7 @@ window.onload = function() {
   let header_burger2 = document.querySelector('.header_burger');
 
   const animItems2 = document.querySelectorAll('._anim-items');
+  const animItems3 = document.querySelectorAll('._anim-items3');
 
   let header_linear_one2 = document.querySelector('.header-linear-one');
   let header_linear_two2 = document.querySelector('.header-linear-two');
@@ -19,7 +20,9 @@ window.onload = function() {
   let header_navigation_item_a_three2 = document.querySelector('.header-navigation-item-a-three');
   let header_navigation_item_a_four2 = document.querySelector('.header-navigation-item-a-four');
 
+
   header_linear_one2.classList.add('active')
+  header_navigation_item_a_one2.style.color = "#19191B";
 
   if (animItems2.length > 0) {
     window.addEventListener('scroll', animOnScroll);
@@ -28,7 +31,7 @@ window.onload = function() {
         const animItem = animItems2[index];
         const animItemHeight = animItem.offsetHeight;
         const animItemOffset = offset(animItem).top;
-        const animStart = 1;
+        const animStart = 1.5;
 
         let animItemPoint = window.innerHeight - animItemHeight / animStart;
 
@@ -117,21 +120,36 @@ window.onload = function() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         }
       }
     }
+
+    if (animItems3.length > 0) {
+      window.addEventListener('scroll', animOnScroll);
+      function animOnScroll(params) {
+        for (let index = 0; index < animItems3.length; index++) {
+          const animItem = animItems3[index];
+          const animItemHeight = animItem.offsetHeight;
+          const animItemOffset = offset(animItem).top;
+          const animStart = 1.8;
+
+          let animItemPoint = window.innerHeight - animItemHeight / animStart;
+
+          if (animItemHeight > window.innerHeight) {
+            animItemPoint = window.innerHeight - window.innerHeight / animStart;
+          }
+
+          if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
+            animItem.classList.add('_active5')
+          } else {
+            if (!animItem.classList.contains('_anim-no-hide3')) {
+              animItem.classList.remove('_active5');
+            }
+          }
+
+          }
+        }
+      }
 
     function offset(el) {
       const rect = el.getBoundingClientRect(),
