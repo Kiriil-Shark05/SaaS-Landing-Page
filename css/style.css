@@ -602,6 +602,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 158px;
 }
 
 .blog-wrapper {
@@ -619,6 +620,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 82px;
 }
 
 
@@ -662,10 +664,18 @@ button {
 .blog-button-yearly {
   width: 160px;
   height: 53px;
-  background-color: #5454D4;
+  background-color: #F7F7FB;
   border-bottom-left-radius: 10px;
   border-top-left-radius: 10px;
+  transition: all 0.2s ease 0s;
+
 }
+
+.blog-button-yearly.active {
+  background-color: #5454D4;
+}
+
+
 
 .blog-button-yearly div {
   font-family: 'DM Sans', sans-serif;
@@ -678,6 +688,11 @@ button {
   text-align: center;
   letter-spacing: -0.500211px;
 
+  color: #19191B;
+  transition: all 0.2s ease 0s;
+}
+
+.blog-button-yearly.active div {
   color: #ffffff;
 }
 
@@ -687,9 +702,14 @@ button {
   background-color: #F7F7FB;
   border-bottom-right-radius: 10px;
   border-top-right-radius: 10px;
+  transition: all 0.2s ease 0s;
 }
 
-.blog-button-monthly div{
+.blog-button-monthly.active {
+  background-color: #5454D4;
+}
+
+.blog-button-monthly div {
   font-family: 'DM Sans', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -701,13 +721,157 @@ button {
   letter-spacing: -0.500211px;
 
   color: #19191B;
+  transition: all 0.2s ease 0s;
+}
+
+.blog-button-monthly.active div {
+  color: #ffffff;
 }
 
 .blog-rates {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
+
+.blog-rates-starter {
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 441px;
+  border-radius: 10px;
+}
+
+.blog-rates-starter-title {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height, or 156% */
+
+  text-align: center;
+  letter-spacing: -0.562737px;
+
+  color: #696871;
+}
+
+.blog-rates-starter-price {
+  font-family: 'DM Sans', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 56px;
+  /* identical to box height, or 93% */
+
+  text-align: center;
+  letter-spacing: -1.03448px;
+
+  color: #1D293F;
+
+}
+
+.blog-rates-starter-block2 div {
+  font-family: 'Mulish', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 50px;
+  /* or 294% */
+
+  text-align: center;
+  letter-spacing: -0.531474px;
+
+  color: #696871;
+}
+
+.blog-rates-starter-block1 {
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 12px;
+
+}
+
+.blog-rates-starter-block2 {
+
+}
+
+.blog-rates-starter-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.blog-rates-starter-block2-button {
+  width: 285px;
+  height: 60px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  transition: background 0.1s linear;
+  text-decoration: none;
+  color: #5454D4;
+  transition: 0.2s all;
+}
+
+.blog-rates-starter-block2-button.active {
+  background-color: #eae6e6;
+}
+
+.blog-rates-starter-price-item-month {
+  font-size: 30px;
+}
+
+.blog-rates-premium-price {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.blog-rates-enterprise-price {
+  margin-top: 20px;
+}
+
+.blog-rates-premium {
+  margin-left: 18px;
+  margin-right: 18px;
+  height: 473px;
+  background-color: #FF7143;
+
+}
+
+.blog-rates-premium-title div {
+  color: #fff;
+}
+
+.blog-rates-premium-block2 div {
+  color: #fff;
+}
+
+.blog-rates-premium-block2-button div {
+  color: #fff;
+}
+
+.blog-rates-premium-block2-button {
+  background-color: #9F3919;
+}
+
+.blog-rates-premium-block2-button.active {
+  background-color: #992500;
+}
+
 
 
 
